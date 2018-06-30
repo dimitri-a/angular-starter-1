@@ -1,9 +1,9 @@
 /**
  * Angular 2 decorators and services
  */
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { environment } from 'environments/environment';
-import { AppState } from './app.service';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {environment} from 'environments/environment';
+import {AppState} from './app.service';
 
 /**
  * App Component
@@ -17,11 +17,14 @@ import { AppState } from './app.service';
   ],
   template: `
     <nav>
-  <a [routerLink]=" ['./team'] "
-        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
+      <a [routerLink]=" ['./team'] "
+         routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
         Team
-      </a>
-  
+      </a> <a [routerLink]=" ['./game'] "
+              routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+      Game
+    </a>
+
     </nav>
 
     <main>
@@ -49,7 +52,8 @@ export class AppComponent implements OnInit {
 
   constructor(
     public appState: AppState
-  ) {}
+  ) {
+  }
 
   public ngOnInit() {
     console.log('Initial App State', this.appState.state);

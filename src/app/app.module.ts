@@ -17,6 +17,7 @@ import { AppState, InternalStateType } from './app.service';
 import { HomeComponent } from './home';
 import { AboutComponent } from './about';
 import { TeamComponent } from './team';
+import { GameComponent } from './game';
 import { NoContentComponent } from './no-content';
 import { XLargeDirective } from './home/x-large';
 import { DevModuleModule } from './+dev-module';
@@ -46,6 +47,7 @@ interface StoreType {
     AboutComponent,
     HomeComponent,
     TeamComponent,
+    GameComponent,
     NoContentComponent,
     XLargeDirective
   ],
