@@ -24,6 +24,10 @@ import {AppState} from './app.service';
               routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
       Game
     </a>
+    <a [routerLink]=" ['./schedule'] "
+              routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+      Schedule
+    </a>
 
     </nav>
     

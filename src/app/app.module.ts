@@ -18,6 +18,7 @@ import { HomeComponent } from './home';
 import { AboutComponent } from './about';
 import { TeamComponent } from './team';
 import { GameComponent } from './game';
+import { ScheduleComponent } from './schedule';
 import { NoContentComponent } from './no-content';
 import { XLargeDirective } from './home/x-large';
 import { DevModuleModule } from './+dev-module';
@@ -48,6 +49,7 @@ interface StoreType {
     HomeComponent,
     TeamComponent,
     GameComponent,
+    ScheduleComponent,
     NoContentComponent,
     XLargeDirective
   ],
