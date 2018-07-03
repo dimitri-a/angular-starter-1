@@ -9,8 +9,15 @@ import { ActivatedRoute } from '@angular/router';
   styles: [`
   `],
   template: `
-    <h1>this is the game component</h1>
-    <input type="text" value="Spain"><span>{{goals}}</span>
+    
+    <team></team>
+    
+    <team></team>
+    
+    
+   
+  
+  
   `
 })
 export class GameComponent implements OnInit {

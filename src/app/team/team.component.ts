@@ -9,7 +9,6 @@ import { ActivatedRoute } from '@angular/router';
   styles: [`
   `],
   template: `
-    <h1>this is the team component</h1>
     <input type="text" value="Spain"><span>{{goals}}</span>
   `
 })
